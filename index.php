@@ -9,14 +9,21 @@
     <title>PHP Badwords</title>
 </head>
 <body>
-    <div class="container vh-100 d-flex flex-column align-items-center justify-content-center">
-        <form action="censor.php" method="POST" class="d-flex flex-column">
-            <label for="paragraph">Inserisci il testo</label>
-            <input type="text" name="paragraph" id="paragraph">
-            <label for="censor">Inserisci la parola da censurare</label>
-            <input type="text" name="censor" id="censor">
-            <input type="submit" value="Invia">
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="bg-warning w-50 d-flex flex-column align-items-center justify-content-center p-5 rounded-4">
+            <form action="censor.php" method="POST" class="d-flex flex-column w-50">
+                <div class="d-flex flex-column">
+                    <label for="paragraph">Inserisci il testo</label>
+                    <input type="text" name="paragraph" id="paragraph">
+                </div>
+                <div class="d-flex flex-column">
+                    <label for="censor" class="mt-4">Inserisci la parola da censurare</label>
+                    <input type="text" name="censor" id="censor" class="mb-4">
+                </div>
+                <input type="submit" value="Invia" class="btn btn-primary align-self-center">
         </form>
+        </div>
+        
     </div>
 </body>
 </html>

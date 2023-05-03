@@ -3,6 +3,7 @@ $text = $_POST['paragraph'];
 $censor = $_POST['censor'];
 $textLength = strlen($text);
 $censoredText = str_replace($censor , "***", $text);
+$censoredTextLength = strlen($censoredText);
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +30,9 @@ $censoredText = str_replace($censor , "***", $text);
 
         <h3>
             <?php echo "Il testo censurato è: $censoredText"?>
+        </h3>
+        <h3>
+            <?php echo "La lunghezza del testo censurato è: $censoredTextLength"?>
         </h3>
     </div>
 </body>
